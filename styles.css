@@ -134,6 +134,8 @@ Header
 .header {
   position: relative;
   min-height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url(./main-bcg.jpeg) center/cover no-repeat fixed;
 }
 
 .banner {
@@ -144,14 +146,17 @@ Header
   transform: translate(-50%, -50%);
 }
 
+.banner h2 {
+  color: var(--clr-primary);
+}
+
+.banner h1 {
+  color: var(--clr-white);
+  text-transform: uppercase;
+}
+
 .banner-btn {
   padding: 1rem 3rem;
   outline: 3px solid var(--clr-primary);
   outline-offset: 0.25rem;
 }
-
-/* 
-=============
-end of Header
-=============
-*/
