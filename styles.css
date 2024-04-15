@@ -125,6 +125,13 @@ a {
   }
 }
 
+.clearfix:before,
+.clearfix:after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
 /* 
 =============
 Header
@@ -188,7 +195,6 @@ skills
 
 .skills {
   background: var(--clr-grey-10);
-  border: 0.5rem solid green;
 }
 
 .skill {
@@ -224,18 +230,3 @@ skills
     width: 25%;
   }
 }
-
-.skills:before,
-.skills:after {
-  content: "s";
-  /* clear: both; */
-  display: table;
-}
-
-.skills {
-  /* height: 15rem; */
-}
-
-/* .skills {
-  clear: both;
-} */
