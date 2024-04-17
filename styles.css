@@ -34,7 +34,7 @@ Global styles
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
 
 body {
@@ -51,10 +51,13 @@ img {
 .btn {
   background-color: var(--clr-primary);
   color: var(--clr-white);
-  padding: 0.5rem 1.5rem;
+  padding: 0.5rem 0.4rem;
+  border: none;
   letter-spacing: var(--spacing);
   text-transform: uppercase;
   display: inline-block;
+  font-size: 0.87rem;
+  font-weight: 700;
 }
 
 .btn:hover {
@@ -130,6 +133,11 @@ a {
   content: "";
   clear: both;
   display: table;
+}
+
+.title h4 {
+  color: var(--clr-primary);
+  font-family: var(--font--secondary);
 }
 
 /* 
@@ -228,5 +236,56 @@ skills
 @media screen and (min-width: 1200px) {
   .skill {
     width: 25%;
+  }
+}
+
+/* 
+====================
+About
+====================
+*/
+
+.abouts {
+  background-color: var(--clr-white);
+}
+
+.section-center {
+  padding: 4rem 0;
+  width: 85vw;
+  margin: 0 auto;
+  max-width: 1170px;
+}
+.about-image,
+.about-info {
+  padding: 2rem 0;
+}
+
+.about-image-container {
+  background-color: var(--clr-primary);
+  border: 0.5rem solid var(--clr-primary);
+  overflow: hidden;
+  transition: var(--transition);
+  max-width: 30rem;
+}
+
+.about-image-container :hover {
+  opacity: 0.5;
+  transform: scale(1.2);
+}
+
+.about-info p {
+  color: var(--clr-grey-5);
+  max-width: 24rem;
+}
+
+@media screen and (min-width: 992px) {
+  .about-image,
+  .about-info {
+    float: left;
+    width: 50%;
+  }
+
+  .about-info {
+    padding-left: 2rem;
   }
 }
