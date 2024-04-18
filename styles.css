@@ -488,8 +488,8 @@ contact
   color: var(--clr-grey-5);
 }
 
-@media screen and(min-width:992px) {
-  .contact-item,
+@media screen and (min-width: 992px) {
+  .contact-info,
   .contact-form {
     float: left;
     width: 50%;
