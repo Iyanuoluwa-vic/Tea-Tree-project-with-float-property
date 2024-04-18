@@ -487,3 +487,11 @@ contact
 .contact-form h3 {
   color: var(--clr-grey-5);
 }
+
+@media screen and(min-width:992px) {
+  .contact-item,
+  .contact-form {
+    float: left;
+    width: 50%;
+  }
+}
