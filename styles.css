@@ -406,7 +406,7 @@ Services
   position: relative;
 }
 
-.fa-solid {
+.product-icon {
   position: absolute;
   bottom: 0;
   left: 50%;
@@ -433,4 +433,57 @@ Services
     width: 30%;
     margin-right: 3.33%;
   }
+}
+
+/* 
+====================
+contact
+====================
+*/
+
+.contact {
+  background-color: var(--clr-grey-10);
+}
+
+.contact-item {
+  margin: 2rem 0;
+  max-width: 15rem;
+}
+
+.contact-title {
+  color: var(--clr-primary);
+}
+
+.contact-text {
+  color: var(--clr-grey-5);
+}
+
+.contact-form {
+  background-color: var(--clr-white);
+  padding: 2rem;
+  text-align: center;
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+}
+
+.formControl {
+  display: block;
+  width: 100%;
+  padding: 0.7rem 1rem;
+  margin-bottom: 1.25rem;
+  border: none;
+  background-color: var(--clr-grey-10);
+  border-radius: 0.5rem;
+  text-transform: uppercase;
+}
+.submit-btn {
+  display: block;
+  width: 100%;
+  padding: 1rem;
+  border-bottom-left-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+}
+
+.contact-form h3 {
+  color: var(--clr-grey-5);
 }
